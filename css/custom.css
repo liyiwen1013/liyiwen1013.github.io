@@ -1,0 +1,48 @@
+/* 顶部和底部一图流 */
+/* 页脚透明 */
+#footer {
+    background: transparent !important;
+}
+
+/* 头图透明 */
+#page-header {
+    background: transparent !important;
+}
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+    background-color: transparent !important;
+}
+
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+/* 右下脚样式重写*/
+#rightside>div>a,
+#rightside>div>button {
+    border-radius: 6px !important;
+}
+
+div.vpower.txt-right {
+    display: none;
+}
+
+div.vwrap {
+    border: 2px solid #675a5a !important;
+}
+
+/* 生肖图标 */
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
